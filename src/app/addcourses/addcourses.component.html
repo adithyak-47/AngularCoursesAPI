@@ -1,0 +1,24 @@
+<h1 style="text-align: center;">Add courses</h1>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+                    <form>
+                        <label class="form-label" for="title">Course Title</label>
+                        <input type="text" [(ngModel)]="courseTitle" name="courseTitle" class="form-control" placeholder="Enter title">
+                        <label class="form-label" for="description">Course Description</label>
+                        <input type="text" [(ngModel)]="courseDescription" name="courseDescription" class="form-control" placeholder="Enter description">
+                        <label class="form-label" for="duration">Course Duration</label>
+                        <input type="text" [(ngModel)]="courseDuration" name="courseDuration" class="form-control" placeholder="Enter duration">
+                        <label class="form-label" for="date">Course Date</label>
+                        <input type="text" [(ngModel)]="courseDate" name="courseDate"class="form-control"  placeholder="Enter date">
+                        <label class="form-label" for="venue">Course Venue</label>
+                        <input type="text" [(ngModel)]="courseVenue" name="courseVenue" class="form-control" placeholder="Enter venue">
+                        <button (click)="valueRead()" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
